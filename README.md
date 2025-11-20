@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Server vs Client User List Demo
 
-## Getting Started
+This project demonstrates the difference between **Server-Side Rendering (SSR)** and **Client-Side Rendering (CSR)** in a React/Next.js application. It includes two user lists: one loaded by the server instantly, and another loaded in the browser using JavaScript.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Server-Side Rendering (SSR)**  
+  - HTML is generated on the server before sending to the browser.
+  - Content appears instantly.
+  - Works even if JavaScript is disabled.
+  - Shows server timestamp to demonstrate instant loading.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Client-Side Rendering (CSR)**  
+  - HTML is minimal at first; data is fetched in the browser using JavaScript.
+  - Shows a slight loading delay before content appears.
+  - More interactive UI, easier to build dynamic interfaces.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Refresh Button**  
+  - Allows you to reload both lists and see updated data.
 
-## Learn More
+- **SSR vs CSR Cards**  
+  - Visual explanation of the differences between SSR and CSR with benefits listed.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
